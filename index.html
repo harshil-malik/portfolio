@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshil Malik</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-family: 'Lato', Arial, sans-serif;
+    
+  }
+
+  h1, h2, h3 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  nav a {
+    color: #4B5563;
+  }
+
+  .about .wrap {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pfp {
+    width: 90px;
+    height: 90px;
+    background-color: #E8EDFC;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .about p {
+    color: #4B5563;
+    max-width: 500px;
+    margin-bottom: 14px;
+  }
+
+  .socialLinks a {
+    margin-right: 16px;
+    font-weight: 700;
+  }
+
+  section {
+    padding: 40px ;
+    border-top: 1px solid #DDE2E8;
+  }
+
+  .skillsList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  .skillsList li {
+    background-color: #FFFFFF;
+    border: 1px solid #DDE2E8;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 700;
+    color: #4B5563;
+  }
+
+  .gridProject {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+
+  .cardProject {
+    background-color: white;
+    border: 1px solid #DDE2E8;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    max-width: 450px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .submitButton {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #2F5DE3;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+  }
+
+  footer {
+    padding: 20px 0 40px;
+    border-top: 1px solid #DDE2E8;
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .about .wrap {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .gridProject {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .center{
+    text-align: center; 
+  }
+
+  h2{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class = "center">
+    <div class="name">Harshil Malik</div>
+    <nav>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="pfp"><img src="harshil.jpg" alt="Harshil Malik"></div>
+    <div>
+      <h1>Harshil Malik</h1>
+      <p>
+        in this website i have created a portfolio made using html and css.
+      </p>
+      <div class="socialLinks">
+        <a href="mailto:harshilmalik2025@gmail.com">Email</a>
+        <a href="https://github.com/harshil-malik">GitHub</a>
+        <a href="https://www.linkedin.com/in/harshil-malik-aa67ab315/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <ul class="skillsList">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Flexbox</li>
+      <li>CSS Grid</li>
+      <li>Python</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <div>
+    <h2>Projects</h2>
+    <div class="gridProject">
+
+      <div class="cardProject">
+        <h3>Reconciliation Engine</h3>
+        <p>An offline bank statement reconciliation tool built with Python.</p>
+        <a href="#">View project</a>
+      </div>
+
+      <div class="cardProject">
+        <h3>This Portfolio</h3>
+        <p>Built with HTML and CSS</p>
+        <a href="#">View source</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="submitButton">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>2026 Harshil Malik</p>
+    <div class="socialLinks">
+      <a href="mailto:harshilmalik2025@gmail.com">Email</a>
+      <a href="https://github.com/harshil-malik">GitHub</a>
+      <a href="https://www.linkedin.com/in/harshil-malik-aa67ab315/">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
